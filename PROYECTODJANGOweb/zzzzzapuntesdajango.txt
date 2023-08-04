@@ -1,0 +1,45 @@
+'''
+
+
+
+#COMANDO PARA ENVIAR SOLO ENTORNO
+* SE CONSULTA LAS LIBRERIAS CON EL COMANDDO
+(entorno) C:\Users\ROSS\Desktop\DJANGO CESAR\PROYECTODJANGO>pip freeze
+ DESPUES AHI SE GENERA EL ARCHIVO REQUIREMENT
+
+(entorno) C:\Users\ROSS\Desktop\DJANGO CESAR\PROYECTODJANGO>pip freeze > requirement.txt
+
+
+# COMANDO PARA VER EL ARCHIVO REQQUIEREMENT TXT
+
+
+#################
+para cambiar el ip del navegador se ingresa al COMANDDO
+click en ipconfig
+copiar el ip:
+Dirección IPv4. . . . . . . . . . . . . . : 192.168.137.187
+
+en la terminal ejecutar el comando 
+(entorno) C:\Users\ROSS\Desktop\DJANGO CESAR\PROYECTODJANGO\GestionNegocio>python manage.py runserver 0.0.0.0:8000
+
+
+en el navegador copiar la ruta:
+http://192.168.137.187:8000/categoria
+
+
+para conectar con otro servidor se copia la ruta del servidor en el navegador
+
+--------------19 julio 2023
+
+GENERAR ARCHIVO REQUERIMENTS
+
+(entorno) C:\Users\ROSS\Desktop\DJANGO CESAR\PROYECTODJANGO\GestionNegocio>pip freeze
+
+(entorno) C:\Users\ROSS\Desktop\DJANGO CESAR\PROYECTODJANGO>pip freeze > requirement.txt
+
+'''
+
+comprimir el archivo del proyecto sin el entorno porque va en el archivo requirement.txt
+
+pagina para subir el proyecto
+https://www.pythonanywhere.com/

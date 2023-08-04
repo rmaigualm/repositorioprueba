@@ -1,0 +1,18 @@
+ipconfig  en cmd  
+
+   Dirección IPv4. . . . . . . . . . . . . . : 192.168.137.187
+
+(entorno) C:\Users\ROSS\Desktop\DJANGO CESAR\PROYECTODJANGO\PROYECTODJANGO\GestionNegocio>python manage.py runserver 0.0.0.0:8000 
+Watching for file changes with StatReloader
+Performing system checks...
+
+http://192.168.137.187:8000/categoria
+
+
+
+
+CATEGORIA
+http://192.168.137.187:8000/categoria
+
+PRODUCTO
+http://192.168.137.187:8000/producto/1
