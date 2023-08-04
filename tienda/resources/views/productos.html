@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Productos</title>
+    <script src="../js/axios.min.js"></script>
+    <script src="../js/producto.js"></script>
+    <style>
+        .links{
+            color: blue;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container d-grid align-content-center">
+        <div class="row">
+            <h1 class="text-center">PRODUCTOS</h1>
+        </div>
+        <div class="row d-flex justify-content-center">
+            <div class="card col-4 shadow">
+                <div class="form-control-sm mt-3">
+                    <label for="txtNombre" class="form-label">Nombre: </label>
+                    <input type="text" name="txtNombre" id="txtNombre" class="form-control">
+                </div>
+                <div class="form-control-sm">
+                    <label for="txtCantidad" class="form-label">Cantidad: </label>
+                    <input type="number" name="txtCantidad" id="txtCantidad" class="form-control">
+                </div>
+                <div class="form-control-sm text-center">
+                    <button type="button" onclick="create()" class="btn btn-primary mb-3"> Crear</button>
+                    <button type="button" onclick="update()" class="btn btn-primary mb-3"> Modificar</button>
+                    <button type="button" onclick="deletes()" class="btn btn-primary mb-3"> Eliminar</button>
+                </div>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center mt-3">
+            <div class="col-6">
+                <table  class="table table-dark shadow">
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Nombre</th>
+                        <th>Cantidad</th>
+                        <th>Estado</th>
+                        <th>Opciones</th>
+                    </tr>
+                    </thead>
+                    <tbody id="table">
+
+                    </tbody>
+                    <tfoot>
+                        <tr id="pages"></tr>
+                    </tfoot>
+                </table>
+            </div>
+            <div>
+                <ul id="errores"></ul>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
+
+
